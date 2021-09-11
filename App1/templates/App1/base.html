@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- loading the static file -->
+    {% load static %}
+
+      <!-- x-icon -->
+    <link rel="shortcut icon" href="{% static 'App1/images/x-icon.png' %}" type="image/x-icon">
+
+    <!-- Other css -->
+    <link rel="stylesheet" href="{% static 'App1/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'App1/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'App1/css/icofont.min.css' %}">
+    <link rel="stylesheet" href="{% static 'App1/css/swiper.min.css' %}">
+    <link rel="stylesheet" href="{% static 'App1/css/style.css' %}">
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+   
+
+    
+   
+    <script src="{% static 'App1/js/jquery.js' %}"></script>
+    <script src="{% static 'App1/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'App1/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'App1/js/swiper.min.js' %}"></script>
+    <script src="{% static 'App1/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'App1/js/wow.min.js' %}"></script>
+    <script src="{% static 'App1/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'App1/js/functions.js' %}"></script>
+
+    <title>Dating</title>
+</head>
+<body>
+
+
+    {% block content %}    
+
+ {% endblock %}
+ 
+</body>
+</html>

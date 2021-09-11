@@ -1,0 +1,297 @@
+{% extends 'App1/base.html' %}
+{% block content %}
+{% load static %}
+    <!-- ==========Header Section========== -->
+    {% include 'App1/navbar.html' %}
+    <!-- ==========Header Section========== -->
+
+    <!-- ================ Banner Section =============== -->
+    <section class="banner-section">
+
+                    </div>
+                         <div class="col-lg-6">
+                          <div class="banner-thumb">
+                            <img src="{% static 'App1/images/Zx.png' %}" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================ Banner Section =============== -->
+
+    <!-- ================ Work Section=============== -->
+    <section class="work-section padding-tb">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="theme-color">How Does It Work?</h4>
+                <h2>You’re Just 3 Steps Away From A Great Date</h2>
+            </div>
+            <div class="section-wrapper">
+                <div class="row justify-content-center g-5">
+                    <div class="col-lg-4 col-sm-6 col-12 px-4">
+                        <div class="lab-item work-item">
+                            <div class="lab-inner text-center">
+                                <div class="lab-thumb">
+                                    <div class="thumb-inner">
+                                        <img src="assets/images/work/01.png" alt="work-img">
+                                        <div class="step">
+                                            <span>step</span>
+                                            <p>01</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lab-content">
+                                    <h4>Create A Profile</h4>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12 px-4">
+                        <div class="lab-item work-item">
+                            <div class="lab-inner text-center">
+                                <div class="lab-thumb">
+                                    <div class="thumb-inner">
+                                        <img src="assets/images/work/02.png" alt="work-img">
+                                        <div class="step">
+                                            <span>step</span>
+                                            <p>02</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lab-content">
+                                    <h4>Find Matches</h4>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12 px-4">
+                        <div class="lab-item work-item">
+                            <div class="lab-inner text-center">
+                                <div class="lab-thumb">
+                                    <div class="thumb-inner">
+                                        <img src="assets/images/work/03.png" alt="work-img">
+                                        <div class="step">
+                                            <span>step</span>
+                                            <p>03</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lab-content">
+                                    <h4>Start Dating</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================ Work Section=============== -->
+
+    <!-- ================ About Section =============== -->
+    <section class="about-section padding-tb bg-img">
+        <div class="container">
+            <div class="section-header">
+
+                   <h4 class="theme-color">About Us</h4>
+                <h2>It All Starts With A Date</h2>
+            </div>
+            <div class="section-wrapper">
+                <div class="row justify-content-center g-4">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                        <div class="lab-item about-item">
+                            <div class="lab-inner text-center">
+                                <div class="lab-thumb">
+                                    <img src="assets/images/about/01.png" alt="img">
+                                </div>
+                                <div class="lab-content">
+                                    <h2 class="counter">22</h2>
+                                    <p>Members in Total</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                        <div class="lab-item about-item">
+                            <div class="lab-inner text-center">
+                                <div class="lab-thumb">
+                                    <img src="assets/images/about/02.png" alt="img">
+                                </div>
+                                <div class="lab-content">
+                                    <h2 class="counter">10</h2>
+                                    <p>Members Online</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                        <div class="lab-item about-item">
+                            <div class="lab-inner text-center">
+                                <div class="lab-thumb">
+                                    <img src="assets/images/about/03.png" alt="img">
+                                </div>
+                                <div class="lab-content">
+                                    <h2 class="counter">10</h2>
+                                    <p>Men Online</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 col-12">
+                        <div class="lab-item about-item">
+                            <div class="lab-inner text-center">
+                                <div class="lab-thumb">
+                                    <img src="assets/images/about/04.png" alt="img">
+                                </div>
+                                <div class="lab-content">
+                                    <h2 class="counter">10</h2>
+                                    <p>Women Online</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =======About Section========== -->
+
+
+    <!-- ========= Member Section ======== -->
+
+    <section class="member-section padding-tb">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="theme-color">Meet & Greet</h4>
+                <h2>Recently Joined Members</h2>
+            </div>
+
+
+            <div class="section-wrapper">
+                <div class="row justify-content-center g-3 g-md-4">
+
+                {% for user in username %}
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                        <div class="lab-item member-item style-1">
+                            <div class="lab-inner">
+                                <div class="lab-thumb">
+                                    <img src="" alt="member-img">
+                                </div>
+                                <div class="lab-content">
+                                    <h6><a href="profile.html">{{user}}</a> </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            {% endfor %}
+
+                   
+                   
+                  
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========== Member Section end Here ======= -->
+
+    <!-- ======== Success Story Section start Here ======= -->
+    <section class="story-section padding-tb bg-img">
+        <div class="container">
+            <div class="section-header">
+
+                  <h2>Couple</h2>
+                <h4 class="theme-color"> Of The Month</h4>
+
+            </div>
+            <div class="section-wrapper">
+                <div class="row justify-content-center g-4">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="story-item lab-item">
+                            <div class="lab-inner">
+                                <div class="lab-thumb">
+                                    <img src="images/Zx.png" alt="img">
+                                </div>
+                                <div class="lab-content">
+                                    <h4><a href="blog-single.html">He Loves She</a></h4>
+                                    <p>About Couple</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </section>
+
+    <!-- ================ Top Member Section end Here =============== -->
+
+
+    <!-- ================ footer Section start Here =============== -->
+    <footer class="footer-section">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-3 justify-content-center g-lg-0">
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="footer-top-item lab-item">
+                            <div class="lab-inner">
+                                <div class="lab-thumb">
+                                    <img src="images/01.png" alt="Phone-icon">
+                                </div>
+                                <div class="lab-content">
+                                    <span>Phone Number : +91XXXXXXXXXX</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="footer-top-item lab-item">
+                            <div class="lab-inner">
+                                <div class="lab-thumb">
+                                    <img src="images/02.png" alt="email-icon">
+                                </div>
+                                <div class="lab-content">
+                                    <span>Email : yourmail@mail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="footer-top-item lab-item">
+                            <div class="lab-inner">
+                                <div class="lab-thumb">
+                                    <img src="images/03.png" alt="location-icon">
+                                </div>
+                                <div class="lab-content">
+                                    <span>Head Office : To be Updated</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-bottom-content text-center">
+                            <p><a href="index.html">Sansriz</a> &copy;2021 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ================ footer Section end Here =============== -->
+
+    <!-- scrollToTop start here -->
+    <a href="#" class="scrollToTop"><i class="icofont-rounded-up"></i></a>
+    <!-- scrollToTop ending here -->
+    <!-- All Scripts -->
+
+
+{% endblock %}

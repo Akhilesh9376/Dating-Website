@@ -1,0 +1,56 @@
+{% extends 'App1/base.html' %}
+{% block content %}
+
+     {% for message in messages  %}            
+      <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+            <strong>Message : </strong> {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+      {% endfor %}    
+
+  <!-- ==========login Section start Here========== -->
+    <div class="login-section padding-tb">
+        <div class=" container">
+            <div class="account-wrapper">
+                <h3 class="title">Login to Proceed</h3>
+                <form class="account-form" action="" method="post">
+                {% csrf_token %}
+                    <div class="form-group">
+                        <input type="text" placeholder="User Name" name="loginusername">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" name="loginpassword">
+                    </div>
+                    <div class="form-group">
+                        <div class="d-flex justify-content-between flex-wrap pt-sm-2">
+                                <a href="{% url 'reset_password' %}">Forget Password?</a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="d-block lab-btn"><span>Login</span></button>
+                    </div>
+                </form>
+                <div class="account-bottom">
+                    <span class="d-block cate pt-10 ">Don’t Have any Account? <a href="{% url 'signup' %}" class="text-danger">SignUp</a></span>
+                    <h5 class="subtitle">Login With Social Media</h5>
+                    <ul class="social-media social-color lab-ul d-flex justify-content-center">
+                      <li>
+                          <a href="#" class="twitter"><i class="icofont-google"></i></a>
+                      </li>
+                        <li>
+                            <a href="#" class="facebook"><i class="icofont-facebook"></i>Facebook</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==========Login Section ends Here========== -->
+    <!-- scrollToTop start here -->
+    <a href="#" class="scrollToTop"><i class="icofont-rounded-up"></i></a>
+    <!-- scrollToTop ending here -->
+
+{% endblock %}

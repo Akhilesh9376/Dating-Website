@@ -1,0 +1,172 @@
+{% extends 'App1/base.html' %}
+{% block content %}
+
+<body>
+    <!-- ==========Header Section========== -->
+    <header class="header-section">
+
+
+                  <div class="header-top-area">
+                </div>
+
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/786.png" alt="logo">
+                                   </a>
+                    </div>
+                    <div class="menu-area">
+                        <ul class="menu">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+
+                            <li>
+                                <a href="#0">Features</a>
+                                <ul class="submenu">
+                                    <li><a href="members.html">All Members</a></li>
+                                    <li><a href="profile.html">My Profile</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#0">More</a>
+                                <ul class="submenu">
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <a href="login.html" class="login"><i class="icofont-user"></i> <span>Sign-Out</span> </a>
+                    <!-- toggle icons -->
+                        <div class="header-bar d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ==========Header Section========== -->
+
+    <!-- ==========Page Header Section Start Here========== -->
+    <section class="page-header-section style-1" style="background:url(assets/images/page-header.jpg)">
+        <div class="container">
+            <div class="page-header-content">
+                <div class="page-header-inner">
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==========Page Header Section Ends Here========== -->
+
+
+    <!-- ==========Profile Section Start Here========== -->
+
+    <section class="profile-section padding-tb">
+      
+        <div class="container">
+            <div class="section-wrapper">
+                <div class="member-profile">
+                    <div class="profile-item">
+                        <div class="profile-cover">
+                        <div class="profile-information">
+
+                      
+                            <div class="profile-pic">
+                                <img src=".jpg" alt="PROFILE PIC">
+                                <div class="custom-upload">
+                                    <div class="file-btn">
+                                        <span class="d-none d-lg-inline-block"> <i class="icofont-camera"></i>
+                                            Edit</span>
+                                        <span class="d-lg-none mr-0"><i class="icofont-plus"></i></span>
+                                    </div>
+                                    <input type="file">
+                                </div>
+                            </div>
+                            <div class="profile-name">
+          <h4 class="text-center" style="color:#37d87b" id="Username">{{request.user}}</h4>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                        </nav>
+                 </section>
+
+                 <!-- ================ footer Section start Here =============== -->
+                 <footer class="footer-section">
+                     <div class="footer-top">
+                         <div class="container">
+                             <div class="row g-3 justify-content-center g-lg-0">
+                                 <div class="col-lg-4 col-sm-6 col-12">
+                                     <div class="footer-top-item lab-item">
+                                         <div class="lab-inner">
+                                             <div class="lab-thumb">
+                                                 <img src="images/01.png" alt="Phone-icon">
+                                             </div>
+                                             <div class="lab-content">
+                                                 <span>Phone Number : +91XXXXXXXXXX</span>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="col-lg-4 col-sm-6 col-12">
+                                     <div class="footer-top-item lab-item">
+                                         <div class="lab-inner">
+                                             <div class="lab-thumb">
+                                                 <img src="images/02.png" alt="email-icon">
+                                             </div>
+                                             <div class="lab-content">
+                                                 <span>Email : yourmail@mail.com</span>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="col-lg-4 col-sm-6 col-12">
+                                     <div class="footer-top-item lab-item">
+                                         <div class="lab-inner">
+                                             <div class="lab-thumb">
+                                                 <img src="images/03.png" alt="location-icon">
+                                             </div>
+                                             <div class="lab-content">
+                                                 <span>Head Office : To be Updated</span>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="footer-bottom">
+                         <div class="container">
+                             <div class="row">
+                                 <div class="col-12">
+                                     <div class="footer-bottom-content text-center">
+                                         <p><a href="index.html">Sansriz</a> &copy;2021 </p>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </footer>
+    <!-- ================ footer Section end Here =============== -->
+
+
+
+    <!-- scrollToTop start here -->
+    <a href="#" class="scrollToTop"><i class="icofont-rounded-up"></i></a>
+
+</body>
+
+
+{% endblock  %}

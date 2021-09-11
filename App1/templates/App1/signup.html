@@ -1,0 +1,58 @@
+{% extends 'App1/base.html' %}
+{% block content %}
+ 
+    <!-- ==========Sign up Section start Here========== -->
+    <div class="login-section padding-tb">
+        <div class="container">
+            <div class="account-wrapper">
+                <h3 class="title">Register Now</h3>
+                <form class="account-form" action=""  method="post">
+                    {% csrf_token %}
+                 <div class="form-group">
+                        <input type="text" placeholder="User Name" name="username">
+                    </div>
+
+                  <div class="form-group">
+                      <input type="text" placeholder="First Name" name="fname">
+                  </div>
+                  <div class="form-group">
+                      <input type="text" placeholder="Last Name" name="lname">
+                  </div>
+                   
+                    <div class="form-group">
+                        <input type="text" placeholder="Email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" name="pass1">
+                    </div>
+
+                     <div class="form-group">
+                        <input type="password" placeholder="Confirm Password" name="pass2">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="d-block lab-btn"><span>Register</span></button>
+                    </div>
+                </form>
+                <div class="account-bottom">
+                    <span class="d-block cate pt-10">Are you a member? <a class="text-info" href="{% url 'login' %}">Login</a></span>
+
+                    <h5 class="subtitle">Register With Social Media</h5>
+                    <ul class="social-media social-color justify-content-center d-flex lab-ul">
+                        <li>
+                            <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="twitter"><i class="icofont-google"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==========Sign up Section ends Here========== -->
+
+    <!-- scrollToTop start here -->
+    <a href="#" class="scrollToTop"><i class="icofont-rounded-up"></i></a>
+ 
+{% endblock  %}
